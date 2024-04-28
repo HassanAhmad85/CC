@@ -3,28 +3,28 @@ import streamlit as st
 from io import StringIO
 import re
 import sys
-# from modules.history import ChatHistory
-# from modules.layout import Layout
-# from modules.utils import Utilities
-# from modules.sidebar import Sidebar
+from modules.history import ChatHistory
+from modules.layout import Layout
+from modules.utils import Utilities
+from modules.sidebar import Sidebar
 
-# #To be able to update the changes made to modules in localhost (press r)
-# def reload_module(module_name):
-#     import importlib
-#     import sys
-#     if module_name in sys.modules:
-#         importlib.reload(sys.modules[module_name])
-#     return sys.modules[module_name]
+#To be able to update the changes made to modules in localhost (press r)
+def reload_module(module_name):
+    import importlib
+    import sys
+    if module_name in sys.modules:
+        importlib.reload(sys.modules[module_name])
+    return sys.modules[module_name]
 
-# history_module = reload_module('modules.history')
-# layout_module = reload_module('modules.layout')
-# utils_module = reload_module('modules.utils')
-# sidebar_module = reload_module('modules.sidebar')
+history_module = reload_module('modules.history')
+layout_module = reload_module('modules.layout')
+utils_module = reload_module('modules.utils')
+sidebar_module = reload_module('modules.sidebar')
 
-# ChatHistory = history_module.ChatHistory
-# Layout = layout_module.Layout
-# Utilities = utils_module.Utilities
-# Sidebar = sidebar_module.Sidebar
+ChatHistory = history_module.ChatHistory
+Layout = layout_module.Layout
+Utilities = utils_module.Utilities
+Sidebar = sidebar_module.Sidebar
 
 st.set_page_config(layout="wide", page_icon="💬", page_title="Claim Correpondent")
 
