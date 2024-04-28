@@ -3,10 +3,10 @@ import streamlit as st
 from io import StringIO
 import re
 import sys
-from modules.history import ChatHistory
-from modules.layout import Layout
-from modules.utils import Utilities
-from modules.sidebar import Sidebar
+# from modules.history import ChatHistory
+# from modules.layout import Layout
+# from modules.utils import Utilities
+# from modules.sidebar import Sidebar
 
 #To be able to update the changes made to modules in localhost (press r)
 def reload_module(module_name):
